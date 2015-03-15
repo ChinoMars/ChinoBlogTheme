@@ -51,6 +51,10 @@
 	<div id="headercontainer">
 
 		<header id="masthead" class="site-header row" role="banner">
+            <div class="user-Gavatar">
+                <!-- add the Gavatar of userself -->
+                <img src="/">                
+            </div>
 			<div class="col grid_12_of_12 site-title">
                             <h1 class="site-title">
                                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" rel="home">
@@ -67,7 +71,8 @@
                             </p>
 
                             <?php if (get_header_image()) : ?>
-                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+                                <!-- <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a> -->
+                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
                             <?php endif; ?>
 			</div> <!-- /.col.grid_12_of_12 -->
                       
