@@ -53,7 +53,7 @@
             <div class="row smallprint left">
                 <p>
                    <a href="<?php $notepad_theme = wp_get_theme(); echo $notepad_theme->get( 'AuthorURI' ); ?>">
-                            <?php _e('Theme provided by IdeaBox and developed by Chino','solo'); ?>
+                            <?php _e('Theme provided by IdeaBox and re-developed by a Psycho called Chino','solo'); ?>
                     </a>
                 </p>
             </div>
