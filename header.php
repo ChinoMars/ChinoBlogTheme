@@ -62,9 +62,9 @@
                                 </a> 
 
                             </h1>
-                            <p class="site-description"> 
+                            <!-- <p class="site-description"> 
                                 <?php echo get_bloginfo('description'); ?>
-                            </p>
+                            </p> -->
 
                             <p class="site-description">
                                 <a href="mailto:chinomask@gmail.com?subject=Hello, Chino">chinomask@gmail.com</a>    
