@@ -19,7 +19,8 @@ get_header(); ?>
 	<div id="primary" class="site-content row" role="main">
 
 		<div class="col grid_12_of_12">
-                    
+ 		/*<div class="col grid_9_of_12">*/
+           
                     <div class="main-content">
                      
 			<?php if ( have_posts() ) : ?>

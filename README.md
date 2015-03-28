@@ -17,3 +17,11 @@ Solo theme Developed by Chino
 - including the above stuff
 
 > all above need to be tested 
+
+####2015/3/17 update info
+**Update files: update content**
+"header.php"
+
+"style.css"
+
+"footer.php"
