@@ -31,7 +31,7 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link rel="shortcut icon" type="image/png" href="http://chinois.me/wp-content/uploads/2015/03/favicon.ico" />
+	<link rel="shortcut icon" type="image/png" href="http://chinois.me/wp-content/uploads/2015/03/favicon.ico" />
 
 	<?php wp_head(); ?>
         
@@ -51,39 +51,28 @@
 	<div id="headercontainer">
 
 		<header id="masthead" class="site-header row" role="banner">
-            <div class="user-Gavatar">
-                <!-- add the Gavatar of userself -->
-                <img src="/">                
-            </div>
 			<div class="col grid_12_of_12 site-title">
                             <h1 class="site-title">
                                 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" rel="home">
                                     <?php echo get_bloginfo('name'); ?>	
-                                </a> 
-
+                                </a>
                             </h1>
-                            <!-- <p class="site-description"> 
+                            <h2 class="site-description" > 
                                 <?php echo get_bloginfo('description'); ?>
-                            </p> -->
-
-                            <p class="site-description">
-                                <a href="mailto:chinomask@gmail.com?subject=Hello, Chino">chinomask@gmail.com</a>    
-                            </p>
+                            </h2>
 
                             <?php if (get_header_image()) : ?>
-                                <!-- <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a> -->
-                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+                                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
                             <?php endif; ?>
 			</div> <!-- /.col.grid_12_of_12 -->
+
+                        <nav id="site-navigation" class="main-navigation row" role="navigation">
                       
+			    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu', 'container_class' => 'menu' ) ); ?>    
+                        
+                                  <div id="mobile-menu"></div>
+                        </nav> <!-- /.site-navigation.main-navigation -->
 		</header> <!-- /#masthead.site-header.row -->
                 
-                <div class="nav-container">
-                    <nav id="site-navigation" class="main-navigation row" role="navigation">
-                            
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu', 'container_class' => 'menu' ) ); ?>
-                            
-                        <div id="mobile-menu"></div>
-                    </nav> <!-- /.site-navigation.main-navigation -->
-                </div><!-- /.nav-container -->
+                
 	</div> <!-- /#headercontainer -->
