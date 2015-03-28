@@ -11,7 +11,7 @@
  */
 ?>
 
-<div id="footercontainer">
+<div id="footercontainer" class="chinosfootercontainer" style="background:#363d41;">
 
     <?php
     // Count how many footer sidebars are active so we can work out how many containers we need
@@ -53,8 +53,9 @@
             <div class="row smallprint left">
                 <p>
                    <a href="<?php $notepad_theme = wp_get_theme(); echo $notepad_theme->get( 'AuthorURI' ); ?>">
-                            <?php _e('Theme provided by IdeaBox and re-developed by a Psycho called Chino','solo'); ?>
+                            <?php _e('Solo WordPress theme by IdeaBox','solo'); ?>
                     </a>
+		    <a href="www.chinois.me">And Developed by Chino</a>
                 </p>
             </div>
             <?php if (get_theme_mod('solo_footer_footer_text') != '') { ?>
