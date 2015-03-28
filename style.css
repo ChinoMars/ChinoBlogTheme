@@ -15,43 +15,7 @@ Solo WordPress theme is licensed under the GPL.
 */
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
-audio,canvas,video{display:inline-block}
-audio:not([controls]){display:none;height:0}
-[hidden],template{display:none}
-html{font-family:georgia;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}
-a{background:0 0}
-a:focus{outline:thin dotted}
-a:active,a:hover{outline:0}
-h1{font-size:2em;margin:.67em 0}
-abbr[title]{border-bottom:1px dotted}
-b,strong{font-weight:700}
-dfn{font-style:italic}
-hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
-mark{background:#ff0;color:#000}
-code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}
-pre{white-space:pre-wrap}
-q{quotes:"\201C" "\201D" "\2018" "\2019"}
-small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
-sup{top:-.5em}sub{bottom:-.25em}
-img{border:0}
-svg:not(:root){overflow:hidden}
-figure{margin:0}
-fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
-legend{border:0;padding:0}
-button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
-button,input{line-height:normal}
-button,select{text-transform:none}
-button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
-button[disabled],html input[disabled]{cursor:default}
-input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
-input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
-input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-textarea{overflow:auto;vertical-align:top}
-table{border-collapse:collapse;border-spacing:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family: "Comic Sans MS", cursive, sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family: "Comic Sans MS", cursive, sans-serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 /* ==========================================================================
    Default stylings from HTML5 Boilerplate
@@ -61,7 +25,7 @@ table{border-collapse:collapse;border-spacing:0}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* Using rem font sizing (Root em’s) with fallback to px for ie8 and below - http://snook.ca/archives/html_and_css/font-size-with-rem */
-body { margin: 0; font-size: 16px; font-size: 1.6rem; line-height: 1.5; }
+body { margin: 0; font-size: 20px; font-size: 1.6rem; line-height: 1.5; }
 
 ::-webkit-selection { background: #EF7A7A; color: #fff; text-shadow: none; }
 ::-moz-selection { background: #EF7A7A; color: #fff; text-shadow: none; }
@@ -82,7 +46,7 @@ td { vertical-align: top; }
 .col {
     display: block;
     float:left;
-    margin: 0 0 0 1.6%;
+    margin: 50px 0 0 0;
 }
 
 /* Remove the margin on the first column. Works on all browsers incl. IE7+ */
@@ -90,7 +54,7 @@ td { vertical-align: top; }
 
 .row {
     clear: both;
-    margin: 0 auto;
+    margin: 0;
     *zoom: 1;
 }
 
@@ -133,8 +97,7 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
-    /*font-family: 'Lato', sans-serif;*/
-    font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     line-height: 1.7;
     font-size: 18px;
     font-size: 1.8rem;
@@ -196,8 +159,7 @@ img.wp-smiley,
 
 /* Header */
 h1, h2, h3, h4, h5, h6 {
-    /*font-family: "Montserrat", Helvetica, Arial, sans-serif;*/
-    font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #333;
@@ -498,7 +460,7 @@ sub {
 .wp-caption .wp-caption-text,
 .gallery-caption,
 .entry-caption {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 14px;
@@ -596,8 +558,7 @@ input[type="button"] {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     vertical-align: middle;
     cursor: pointer;
-    /*background-color: #f5f5f5;*/
-    background-color: #fff;
+    background-color: #f5f5f5;
     *background-color: #e6e6e6;
     background-repeat: repeat-x;
     border: 1px solid #cccccc;
@@ -738,8 +699,7 @@ input[type="submit"].btn-small {
 
 .gform_wrapper h3.gform_title{
     text-align: center;
-    /*font-family: Montserrat;*/
-     font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 36px !important;
     line-height: 1.5;
     font-weight: 400 !important;
@@ -798,7 +758,7 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .entry-content .button {
-    background-color: #EF7A7A;
+    background-color: #363d41;
     border:none;
     box-shadow: none;
     cursor: pointer;
@@ -836,7 +796,7 @@ select {
 .page-title,
 .entry-content th,
 .comment-content th {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -877,11 +837,10 @@ select {
 
 .site-header {
     clear: both;
-    /*width: 90%;*/
-    width:100%;
+    width: 90%;
     font-size: 16px;
     font-size: 1.6rem;
-    max-width: 1140px;
+    /*max-width: 1140px;*/
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -892,8 +851,7 @@ select {
     text-align:center;
 }
 .site-title h1 {
-    /*font-family: "Montserrat", Helvetica, Arial, sans-serif;*/
-     font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     margin-top: 20px;
     margin-top: 2rem;
     margin-bottom: 0px;
@@ -1279,8 +1237,7 @@ img.wp-post-image{
     text-align:center;
     padding:5px 15px;
     margin:0 auto;
-    /*font-family: "Montserrat", Helvetica, Arial, sans-serif;*/
-    font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     background:#EF7A7A;
     color:#fff;
     border-radius: 3px;
@@ -1302,7 +1259,7 @@ img.wp-post-image{
 
 .entry-content dt,
 .comment-content dt {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
@@ -1534,7 +1491,7 @@ img.wp-post-image{
 
 /* Quote */
 .format-quote .entry-content blockquote:before {
-    font-family: 'FontAwesome';
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: normal;
     font-style: normal;
     speak: none;
@@ -1576,8 +1533,7 @@ img.wp-post-image{
 }
 
 .archive-meta {
-    /*font-family: 'Lato', Helvetica, Arial, sans-serif;*/
-    font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: italic;
     font-weight: 400;
     color: #777;
@@ -1645,7 +1601,7 @@ img.wp-post-image{
 }
 
 .comments-area article header time {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.8;
@@ -1810,7 +1766,7 @@ span.required {
 }
 
 form label.error {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 700;
     display:block;
@@ -1878,11 +1834,10 @@ div.wpcf7{
    Footer
    ========================================================================== */
 
-#footercontainer {
-    /*background: #EF7A7A;*/
-    background: #fff;
+/*#footercontainer {
+    background: #363d41;
     width: 100%;
-}
+}*/
 
 .site-footer {
     clear: both;
@@ -1909,7 +1864,7 @@ div.wpcf7{
 }
 
 .site-footer a:hover {
-    color: #eee;
+    color: #fff;
 }
 
 .site-footer a:focus {
@@ -1948,7 +1903,7 @@ div.wpcf7{
     clear:both;
 }
 .smallprint {
-    color: #fff;
+    color: #000;
     width: 50%;
     clear:none;
 }
@@ -1961,15 +1916,15 @@ div.wpcf7{
 }
 
 .smallprint a {
-    color: #fff;
+    color: #363d41;
 }
 
 .smallprint a:visited {
-    color: #fff;
+    color: #363d31;
 }
 
 .smallprint a:hover {
-    color: #eee;
+    color: #ef7a7a;
 }
 
 .smallprint.left{
@@ -1991,7 +1946,7 @@ div.wpcf7{
 }
 
 .sidebar a {
-    color: #EF7A7A;
+    color: #363d41;
 }
 
 .sidebar .widget {
@@ -2042,7 +1997,7 @@ div.wpcf7{
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
-    font-family: "Opens Sans", sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     text-transform: uppercase;
 }
 
@@ -2107,7 +2062,7 @@ div.wpcf7{
 }
 
 #wp-calendar caption {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
@@ -2235,8 +2190,7 @@ li span.page-numbers {
     color:#fff;
     font-size:20px;
     background:#333;
-    /*font-family:"Montserrat", Helvetica, Arial, sans-serif;*/
-    font-family: georgia;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 
@@ -2291,7 +2245,7 @@ li span.current {
     color:#999;
 }
 .main-navigation ul ul {
-    background: #EF7A7A;
+    background: #363d41;
     display: none;
     float: left;
     left: 0;
@@ -2846,29 +2800,85 @@ img#wpstats {
     h2, h3 { page-break-after: avoid; }
 }
 
+/*=============================================================*/
+/*  自定义CSS格式表 */
+/*=============================================================*/
 
-/*begin the Chino's CSS setting*/
-#user-Gavatar img{
-    height:120px;
-    width:120px;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    border-radius: 50%;
-    /*border: 1px solid #fff;*/
-    overflow:hidden;
-    padding: 0 auto;
+#headercontainer{
+    box-shadow:0 6px 10px #666;
+}
+
+#masthead{
+    position:relative;
+    width: 100%;
+    height: 275px;
+    margin: 0;
+    padding: 0;
+    background-size:cover;
+    background-image:/*linear-gradient(to top,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.0001) 100%), */ url(/wp-content/uploads/2015/03/banner_dark.jpg);
+}
+
+#headercontainer:before, #headercontainer:after{
+    position: absolute;
+    box-shadow:0 6px 10px #666;
+}
+
+.site-title h1 a{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size:40px;
+    font-color:#fff;
+    font-weight:700;
+    margin-top: 50px;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    margin-bottom: 0rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -khtml-transition: all 0.3s ease;
+    -moz-transitiokn: all 0.3s ease;
+}
+
+/*.site-title h1 a:hover{
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s; 
+    transition:0.5s;
+    -webkit-text-shadow: 0 0 30px rgba(255,255,255,1);
+    -moz-text-shadow: 0 0 30px rgba(255,255,255,1);
+    text-shadow: 0 0 30px rgba(255,255,255,1);
+}*/
+
+.site-description{
+    font-size:30px; 
+    margin:20px auto 0px;
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition:1s;
 }
 
-#user-Gavatar img:hover{
-/*    -webkit-transform:rotate(-60deg); 
-    -moz-transform:rotate(-60deg); */
+.site-description:hover,.site-title h1 a:hover,#menu-menu-1 li a:hover{
     -webkit-transition:0.5s;
     -moz-transition:0.5s; 
-    -webkit-box-shadow: 0 0 30px rgba(255,255,255,1), inset 0 0 30px rgba(255,255,255,1);
-    -moz-box-shadow: 0 0 30px rgba(255,255,255,1), inset 0 0 30px rgba(255,255,255,1);
-    box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 30px rgba(255,255,255,1);
+    transition:0.5s;
+    -webkit-text-shadow: 0 0 30px rgba(255,255,255,1);
+    -moz-text-shadow: 0 0 30px rgba(255,255,255,1);
+    text-shadow: 0 0 30px rgba(255,255,255,1);
+}
 
+#menu-menu-1 li{
+    margin:0 15px;
+}
+
+#menu-menu-1 li a{
+    font-size:20px;
+}
+
+#maincontentcontainer{
+    margin:0 auto;
+    /* remain to edit it*/
+}
+
+.chinosfootercontainer{
+    background:#363d41;
+    height:2px;
+    width:100%;
 }
