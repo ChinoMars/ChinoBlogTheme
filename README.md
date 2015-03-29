@@ -25,3 +25,11 @@ Solo theme Developed by Chino
 "style.css"
 
 "footer.php"
+
+####2015/3/28 update info
+**Update files: update info
+"header.php"
+
+"style.css"
+
+"footer.php"
